@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pure CSS Landing Page Design</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h4 class="logo">© Hassan Arzoo @ codsoft Intern</h4> <br>
+				<ul>
+					<li>
+						<a href="#" class="active">Home</a>
+					</li>
+					<li>
+						<a href="#" class="active">About</a>
+					</li>
+					<li>
+						<a href="#" class="active">Services</a>
+					</li>
+					<li>
+						<a href="#" class="active">Our Work</a>
+					</li>
+					<li>
+						<a href="https://hassan-arzoo.github.io/portfolio1.github.io/" class="active">Portfolio</a>
+					</li>
+					<li>
+						<a href="#" class="active">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bannerText">
+				<h2>Welcome</h2><br>
+				<h3>To my Landing page </h3>
+                
+				<p>
+					We are committed to revolutionizing the way you engage with technology. Our mission is to provide innovative solutions that empower businesses and individuals to thrive in the digital age. Discover a world of endless possibilities as we combine creativity, expertise, and cutting-edge technologies to deliver exceptional results. Whether you're looking to build a stunning website, optimize your online presence, or leverage the power of data analytics, we have the expertise to bring your vision to life. Join us on this exciting journey of digital transformation and unlock your true potential in today's fast-paced and interconnected world.
+				</p>
+				<a href="#">Read More</a>
+                <footer>
+                    <p>&copy;  Hassan Arzoo@2023. All rights reserved.</p>
+                </footer>
+			</div>
+			<img src="bulb.jpg" class="bulb">
+			<ul class="sci">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/hassan-arzoo-b957a7256/"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<div class="element1"></div>
+			<div class="element2"></div>
+		</section>
+
+		
+
+		<!-- Code injected by live-server -->
+		<script>
+			// <![CDATA[  <-- For SVG support
+			if ('WebSocket' in window) {
+				(function () {
+					function refreshCSS() {
+						var sheets = [].slice.call(document.getElementsByTagName("link"));
+						var head = document.getElementsByTagName("head")[0];
+						for (var i = 0; i < sheets.length; ++i) {
+							var elem = sheets[i];
+							var parent = elem.parentElement || head;
+							parent.removeChild(elem);
+							var rel = elem.rel;
+							if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+								var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+								elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+							}
+							parent.appendChild(elem);
+						}
+					}
+					var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+					var address = protocol + window.location.host + window.location.pathname + '/ws';
+					var socket = new WebSocket(address);
+					socket.onmessage = function (msg) {
+						if (msg.data == 'reload') window.location.reload();
+						else if (msg.data == 'refreshcss') refreshCSS();
+					};
+					if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+						console.log('Live reload enabled.');
+						sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+					}
+				})();
+			} else {
+				console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+			}
+			// ]]>
+		</script>
+
+	</body>
+</html>
